@@ -1,0 +1,29 @@
+{
+  "name": "josephlinden/typo3-code-coverage-bug-ext",
+  "description": "This is a dummy extension that defines few simple classes and tests to test the phpunit/php-code-coverage extension.",
+  "type": "typo3-cms-extension",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/josephlinden/typo3-code-coverage-bug-ext.git"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Joseph Linden"
+    }
+  ],
+  "require": {
+    "typo3/cms-core": ">=7.6.0,<8.9.99"
+  },
+  "autoload": {
+    "psr-4" : {
+      "JosephLinden\\Typo3CodeCoverageBugExt\\": "Classes/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "JosephLinden\\Typo3CodeCoverageBugExt\\Tests": "Tests/"
+    }
+  }
+}
